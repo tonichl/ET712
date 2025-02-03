@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statement</title>
+</head>
+<body>
+    <h1>toni chen liang</h1>
+    <script>
+        console.log(`\n---------- example 1: true/false in JS -------------`)
+        let day = true;
+        let night = false;
+        let n1 = 9  //numerical variable
+        let n2 = -12    // numerical variable   
+        let n3 = "9"    // string variable
+        let n4 = 9
+
+
+
+        console.log(`bootlean value of "day" =${day}`)
+        console.log(`is n1 less than or equal to n2? = ${n1>=n2}`)
+        console.log(`is n1 equal to n3? ${n1==n3}`)
+        console.log(`is n1 equal to n3? ${n1===n3}`)
+        console.log(`is n1 equal to n4? ${n1===n4}`)
+
+
+        console.log(`\n---------- example 2: if statement in JS -------------`)
+        // declare variables
+        let goodmood = true;
+        let gotsleep = true;
+
+        if(goodmood === gotsleep){
+            console.log("today is a good day!")
+        }
+
+        console.log("I am moody")
+
+        let n5 = -8
+        // if statement to check if n5 is a negative number
+        if(n5<0){
+            console.log(`${n5} is negative`)
+        }
+
+
+        console.log(`\n---------- example 3: if-else statement in JS -------------`)
+        // test if n5 is positive or negative
+        if(n5>=0){
+            console.log(`${n5} is positive`)
+        }
+        else{
+            console.log(`${n5} is negative`)
+        }
+
+        console.log(`\n---------- example 4: if-else statement in JS -------------`)
+        // test two numbers
+        let x1 = 3
+        let x2 = 5
+
+        if(x1===x2){
+            console.log("the numbers are equal")
+        }
+        else if (x1>x2){
+            console.log(`${x1} is greater than ${x2}`)
+        }
+        else if (x1<x2){
+            console.log(`${x1} is less than ${x2}`)
+        }
+        else{
+            console.log("cannot be compared!")
+        }
+
+
+
+        console.log(`\n---------- example 5: isNaN function in JS -------------`) 
+
+        let userinput = prompt("enter a number: ")
+        let checkinput = isNaN(parseInt(userinput)) //check if the userinput NOT is a numerical value
+
+        console.log(checkinput)
+        
+        if(checkinput){ //or checkinput===true
+            console.log(`user input ${userinput} is NOT a number`)
+        }
+        else{
+            console.log(`user input ${userinput} is a number`)
+        }
+
+
+        console.log(`\n---------- example 6: logical operator in JS -------------`) 
+        let password = prompt("enter a password")
+        password = password.trim() // remove whitespace before and after
+        
+        // test if the password has 6+ characters and no whitespace in between characters
+        if(password.length >= 6 && password.indexOf(" ")===-1){
+            console.log(`${password} is valid`)
+        }
+        else{
+            console.log(`ERROR! ${password} is not at the right format`)
+        }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+        console.log("\n--------------- exercises lab 2 ------------------------")
+        /*Create a JS program that will ask the user to enter a value, 
+        could be a string or a number, in the dialog box. Once the value is entered, 
+        the program will print in the console the value and the value type. 
+        For example, if the user enters a negative number, let us say -6, 
+        the console will print: -6 is a negative number .
+        Also, if the user enters a positive number, let us say 9, the console will print: 
+        9 is a positive number . If the user enters a string, the console will print:_____ is a string.*/
+
+        let value = prompt("enter a value")
+        let checkvalue = isNaN(parseInt(value))// check if the value is not a number, if not, it is true
+
+        console.log(checkvalue)
+        
+        if(checkvalue){ //or checkinput===true
+            console.log(`${value} is a string`)
+
+        }
+
+        else if (value<0){
+            console.log(`${value} is negative number`)
+        }
+        else if(value>0){
+            console.log(`${value} is positive number`)
+        }
+        else{
+            console.log(`${value} is neutral number`)
+        }
+
+    /*Using switch statement, write a JS program that will ask the user to select a color 
+    by entering a lowercase or uppercase character. Once the user has selected a color, 
+    the console will print a message as: You selected _____ color . 
+    If the user enters a character that is not in the list, the program will console: 
+    Color is not in the list! */
+
+        let color= prompt("enter a color in UPPERCASE")
+        color = color.toUpperCase() // need to be uppercase to match the case, if not it will print default.
+        console.log(`color: ${color}`)
+
+        switch(color) {
+            case 'BLUE':
+            case 'RED':
+            case 'YELLOW':
+            case 'WHITE':
+            case 'BLACK':
+            case 'GREEN':
+                console.log(`you selected ${color} color`)
+            break;
+
+            default:
+                console.log(`${color} color is not on the list`)
+        }
+
+
+    </script>
+</body>
+</html>
