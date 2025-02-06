@@ -107,3 +107,91 @@ console.log(`there are ${negativenum} negative numbers and the sum is ${sumnegat
 console.log(`there are ${positivenum} positive numbers and the sum is ${sumpositive}`)
 
 
+console.log("\n-------------- example 6: while loop as a counter ------------")
+// use a while loop to display number from 0 to 4 ---> 0 1 2 3 4
+
+let y=0;
+while(y<=4){
+    console.log(y);
+    y++
+}
+
+
+console.log("\n-------------- example 7: while loop application ------------")
+// using while loop to check if the user number guess the secret number
+
+const SECRECT = 8
+// collect a number from user
+
+let usernumber = parseInt(prompt("enter a secret number: "))
+let guesscounter = 0; 
+// run a while loop to recollect the user number if the number doesnt match the secret number
+
+while(usernumber !== SECRECT){
+    guesscounter++
+    usernumber = parseInt(prompt("wrong guess, enter another number: "))
+    console.log(`${usernumber} is wrong, please enter another number.`)
+}
+
+console.log(`${usernumber} is correct!`)
+console.log(`total attempts ${guesscounter}`)
+
+
+console.log("\n-------------- example 8: break in a while loop ------------")
+//create an app to sum all even numbers. the app continuously collect a positive number and stop if a negative number is entered
+
+let sumevennum = 0;
+let collectnum;
+while(true){
+    collectnum = parseInt(prompt("enter a positive number: "))
+    if(collectnum<0){
+        break
+    }
+    else{
+        if(collectnum >=0 && collectnum%2===0 ){
+            sumevennum += collectnum
+            // or sumevennum = sunevennum + collectnum
+        }
+        
+    }
+}
+console.log(`the sum of all even number is ${sumevennum}`)
+
+
+console.log("\n-------------- example 9: continue in a while loop ------------")
+// print number from -5 to 5
+
+let n = -5;
+index = 0;
+for(index = n; n<=5; n++){ //or for(let n = -5; n<=5; n++)
+    if(n%2===0){
+        continue
+    }
+    console.log(n)
+}
+
+
+console.log("\n-------------- exercise 2  ------------")
+
+const PIN =9871;
+let userpin = parseInt(prompt("enter a 4 digit pin number: "))
+let pinattempts =0;
+
+while(userpin !== PIN){
+    pinattempts ++
+    console.log(`attempt${pinattempts}`)
+    //userpin = parseInt(prompt("invalid pin, please enter another 4 digit pin: "))
+
+    if(pinattempts ===3){
+        console.log(`account locked`)
+        break;
+    }
+    userpin = parseInt(prompt("invalid pin, please enter another 4 digit pin: "))
+    
+}
+
+if(userpin === PIN){
+    console.log(`correct pin!`)
+}
+
+
