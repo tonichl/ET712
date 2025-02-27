@@ -1,0 +1,190 @@
+*{box-sizing: border-box;} /*preserve the 100 width*/
+
+img{width:100%; display: block;}
+
+.header{
+    background-color:antiquewhite;
+    display:flex;
+}
+
+.logo{
+    width:10%;
+    /*border: solid red 1px;*/
+    padding: 1em;
+}
+
+.title{
+    width: 70%;
+    /*border: solid red 1px;*/
+    text-align: center;
+    padding: 1em;
+    font-size: 2em;
+    color:rgb(147, 99, 58);
+}
+
+.quicklinks{
+    width:auto;
+    font-size: 1.5em;
+    /*border: solid red 1px;*/
+    margin-left: auto;
+    display: flex;
+    
+}
+
+.quicklinks a {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    color:rgb(147, 99, 58)
+}
+
+.quicklinks a:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+    
+}
+
+/*nav links*/
+.navlinks {
+    width:auto;
+    background-color:whitesmoke;
+    display: flex;
+    justify-content:center;
+}
+
+.navlinks a{
+    display: inline-block;
+    width:auto;
+    text-align: center;
+    padding: 1em;
+    font-size:1.2em;
+    color:rgb(147, 99, 58);
+    text-decoration: none;
+}
+
+.navlinks a:hover{
+    background-color:darksalmon;
+}
+
+
+/*intro image*/
+.introimage{
+    position: relative;
+}
+
+.intro{
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    background-color:rgba(206, 204, 204, 0.6);
+    padding: 1em 2em;
+    border-radius: 5px;
+}
+
+.intro h1{
+    color:rgb(147, 99, 58)
+}
+
+.intro p{
+    font-size: 1em;
+}
+
+
+
+/* cards section*/
+
+.subtitle{
+    text-align: center;
+}
+.cardcontainer{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card, .verticalcard{
+    height:auto;
+    width: 345px;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1% 2%;
+    position:relative;
+}
+
+.card img{
+    height:200px;
+
+}
+
+.card p{
+    padding: 1em;
+}
+
+.card a{
+    display: block;
+    background-color: darkblue;
+    padding: 1em;
+    color: whitesmoke;
+    text-align: center;
+    font-weight:900;
+    text-decoration: none;
+
+}
+
+.card a:hover{
+    opacity:0.8;
+    font-size: 1em;
+}
+
+
+
+.verticalcard{
+    position:relative;
+    transition: ease-in-out 250ms;
+    
+
+}
+
+.verticalcard img{
+    height:500px;
+
+}
+
+.verticalcard h3{
+    position: absolute;
+    left:20%;
+    right:20%;
+    bottom:10%;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+.verticalcard:hover{
+    transform:translateY(20px);
+    box-shadow: 1px -5px 10px gray;
+    filter:blur(1px);
+
+}
+
+.verticalcard:hover .h3card{
+    color: crimson;
+}
+
+.linkcard{
+    display: block;
+    width:350px;
+    margin:1% 2%;
+
+}
+
+.footer{
+    margin-top: 2em;
+    text-align: center;
+    background-color: antiquewhite;
+    color:rgb(147, 99, 58);;
+    padding: 3em;
+
+}
