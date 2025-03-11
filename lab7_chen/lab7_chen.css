@@ -18,3 +18,28 @@
     background-color: darkslategray;
     
 }
+
+
+/* example 8*/
+.divexample8{
+    width:300px;
+    margin:2em auto;
+    height: 300px;
+    border: solid 2px gray;
+}
+
+
+/* lab exercise */
+div.divs2, div.divs3{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 20px;
+}
+
+.font{
+    font-size: 25px;
+    color:olive;
+}
+
+
