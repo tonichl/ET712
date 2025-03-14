@@ -1,0 +1,134 @@
+/*example 1*/
+
+.btnpressme{
+    display: block;
+    padding: 1em 2em;
+    border-radius: 10px;
+    background-color:goldenrod;
+}
+
+.btnactive{
+    background-color:red;
+    font-weight:bolder;
+}
+
+
+
+/*#fruitlist{
+    background-color:bisque;
+}*/
+
+#fruitlist li{
+    background-color:bisque;
+    list-style:none;
+    border-bottom: 1px solid lightblue;
+    width: 200px;
+    padding: 1em, 2em;
+}
+
+#fruitlist li:hover{
+    background-color:aquamarine;
+    color:blue;
+}
+
+img{width:100%; display:block;}
+.card{
+    width:150px;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.linkreadmore{
+    display:block;
+    background-color:blanchedalmond;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em;
+    color:black;
+}
+
+.linkreadmore:hover{
+    background-color:cornflowerblue;
+}
+
+.modalwindow{
+    background-color:rgba(100, 100, 100, 0.6);
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display:none;
+
+}
+
+.modalcontent{
+    width: 60%;
+    height: 70%;
+    margin: 5% auto;
+    background-color:white;
+    
+}
+
+.modalheader{
+    background-color:lightblue;
+    display: flex;
+    padding: 0.5em;
+
+}
+
+.closex{
+    display: block;
+    padding: 1em;
+    margin-left: auto;
+    font-size: 2em;
+    text-align: center;
+
+}
+
+
+.closex:hover{
+    color:crimson;
+}
+
+.info{
+    padding:1em;
+}
+
+/*exercise*/
+
+.circle{
+    display: flex;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background-color:darkslategray;
+    padding: 1em 1em;
+    font-size:40px;
+    color:beige;
+    margin-bottom:5px;
+    justify-content: center;
+    cursor: pointer;
+    
+
+}
+
+.reset{
+    display: block;
+    padding: 0.5em 0.5em;
+    border-radius: 5px;
+    background-color:goldenrod;
+    cursor: pointer;
+}
+
+.reset:hover{
+    background-color:bisque;
+    font-weight:bolder;
+}
+
+
+
+
+
+
+
+
