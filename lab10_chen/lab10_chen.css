@@ -1,0 +1,218 @@
+*{box-sizing: border-box;}
+
+#myform{
+    width: 400px;
+    margin: 3em auto;
+    background-color:darkcyan;
+    padding: 2em;
+}
+
+.btnsubmit{
+    width:100%;
+    background-color:cadetblue;
+    color:blanchedalmond;
+    padding:0.5em;
+    margin-top: 2em;
+    border: none;
+    border-radius: 5px;
+}
+
+.btnsubmit:hover{
+    background-color:brown;
+}
+
+.greeting{
+    width: 400px;
+    margin: auto;
+}
+
+.greetuser{
+    color:darkslateblue;
+    font-weight: bolder;
+}
+
+.formcontrol{
+    margin:2em;
+}
+
+label{
+    display: inline-block;
+    width: 30%;
+    color:bisque;
+}
+
+input{
+    display: inline-block;
+    width:70%;
+}
+
+.errmsg{
+    color:brown;
+    font-size: 0.8em;
+    display: none;
+}
+
+.btnsubmit:disabled{
+    background-color: gray;
+    cursor:not-allowed;
+    color:cadetblue
+}
+
+label{
+    display: inline-block;
+    width: 30%;
+    color:bisque;
+}
+
+
+/*homework 4 exersice 1 */
+#Myform{
+    width: 400px;
+    margin: 3em auto;
+    background-color:rgb(0, 72, 72);
+    padding: 2em;
+}
+
+
+.Passerrmsg{
+    color:firebrick;
+    font-size: 1em;
+    display: none;
+}
+
+.Passerrmsgchar{
+    color:firebrick;
+    font-size: 1em;
+    display: none;
+}
+
+.Emailerrmsg{
+    color:firebrick;
+    font-size: 1em;
+    display: none;
+}
+
+.Btnsubmit{
+    width:100%;
+    background-color:cadetblue;
+    color:blanchedalmond;
+    padding:0.5em;
+    margin-top: 2em;
+    border: none;
+    border-radius: 5px;
+}
+
+.Btnsubmit:hover{
+    background-color:brown;
+}
+
+
+/*exercise 2*/
+img{width: 300px; display: block; height:500px}
+
+.maincontainer, .gallerycontainer{
+    width:900px;
+    height:500px;
+    margin: auto;
+}
+
+.maincontainer{
+    position: relative;
+    z-index: 0;
+    margin:2em 10em;
+
+}
+
+.gallerycontainer{
+    position: relative;
+    z-index: 1;
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+
+.galleryimg{
+    display: inline-block;
+    width: 300px;
+}
+
+.btnright, .btnleft{
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    font-size: 1.5em;
+    padding:0.5em;
+    border: none;
+    background-color:rgba(100, 100, 100, 0.6)
+}
+
+.btnright{
+    right: 0%;
+}
+
+.btnleft{
+    left: 0%;
+}
+
+.btnright:hover, .btnleft:hover{
+    background-color:rgba(200, 200, 200, 0.9);
+    color:brown;
+}
+
+/* Gallery item */
+.galleryitem {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 500px;
+}
+
+
+
+/* Gallery info */
+.galleryinfo {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100%;
+    width:100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    transform: translateY(100%);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Show gallery info on hover */
+.galleryitem:hover .galleryinfo {
+    transform: translateY(0);
+}
+
+/* Gallery title */
+.gallerytitle {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Gallery description */
+.gallerydesc {
+    margin: 5px ;
+    font-size: 1em;
+    white-space: normal; /*allow text to wrap*/
+}
+
+/* Gallery link */
+.gallerylink {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 
+}
+
+.gallerylink:hover {
+    text-decoration: underline;
+}
+

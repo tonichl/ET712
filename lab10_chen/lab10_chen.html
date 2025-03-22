@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 10, form events</title>
+    <link rel="stylesheet" href="lab10_chen.css">
+</head>
+<body>
+    
+    <form id="myform">
+        <section class="formcontrol">
+            <label for="username"> username: </label>
+            <input type="text" id="username" name="username" placeholder="enter username...">
+        </section>
+
+        <section class="formcontrol">
+            <label for="password"> password</label>
+            <input type="password" id="password" name="password" placeholder="enter password">
+            <p class="errmsg">password must be 8+ characters</p>
+        </section>
+
+        <button type="submit" class="btnsubmit">submit form</form></button>
+    </form>
+
+    <!-- display a welcome message-->
+
+    <div class="greeting">
+        <p>welcome to form events <span class="greetuser"> testing</span></p>
+    </div>
+
+
+
+    <!-- homework 4 -->
+    <!-- exercise 1-->
+<h2>exercise 1</h2>
+    <form id="Myform">
+        <section class="formcontrol">
+            <label for="Name"> name: </label>
+            <input type="text" id="Name" name="name" placeholder="enter username">
+        </section>
+
+        <section class="formcontrol">
+            <label for="Email">email address:</label>
+            <input type="text" id="Email" Email="email" placeholder="enter email address">
+            <p class="Emailerrmsg">email in wrong format, Email must contain @</p>
+        </section>
+
+        <section class="formcontrol">
+            <label for="Password">password:</label>
+            <input type="password" id="Password" Password="password" placeholder="enter password">
+            <p class="Passerrmsg">password must be at least 5 characters</p>
+            <p class="Passerrmsgchar"> includes at least one of the characters #, $, or %</p>
+        </section>
+
+        
+        <button type="submit" class="Btnsubmit">submit form</form></button>
+    </section>
+    </form>
+
+
+<h2>exercise 2</h2>
+<section class="maincontainer">
+    <div class="gallerycontainer">
+
+        <!-- Image 1 -->
+        <div class="galleryitem">
+            <img class="galleryimg" src="images/airplane.jpg" alt="Airplane">
+            <div class="galleryinfo">
+                <h3 class="gallerytitle">plane over electric tower</h3>
+                <p class="gallerydesc">A plane going to landing and guided by airport traffic lights. Clear sky, sunset, plane, travel, flight, look-up, trail, wallpaper</p>
+                <a href="https://unsplash.com/photos/plane-over-electric-tower-WM5VxkuVwg8" class="gallerylink">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="galleryitem">
+        <img class="galleryimg" src="images/autumn.jpg">
+            <div class="galleryinfo">
+                <h3 class="gallerytitle">autumn</h3>
+                <p class="gallerydesc">Swiss autumn</p>
+                <a href="https://unsplash.com/photos/people-walking-on-footpath-vn48oxAMVoA" class="gallerylink">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="galleryitem">
+            <img class="galleryimg" src="images/beach.jpg">
+                <div class="galleryinfo">
+                    <h3 class="gallerytitle">beach</h3>
+                    <p class="gallerydesc">croatia beach</p>
+                    <a href="https://unsplash.com/photos/aerial-photography-of-seashore-55ulpBt_z2Q" class="gallerylink">Learn More</a>
+                </div>
+            </div>
+
+        <!-- Image 4 -->
+        <div class="galleryitem">
+            <img class="galleryimg" src="images/mountain.jpg">
+                <div class="galleryinfo">
+                    <h3 class="gallerytitle">mountain road</h3>
+                    <p class="gallerydesc">Wish some Journey Never Ends</p>
+                    <a href="https://unsplash.com/photos/photo-of-empty-road-between-rock-formations-KQZZCVyEWVk" class="gallerylink">Learn More</a>
+                </div>
+            </div>
+
+
+        <!-- Image 5 -->
+        <div class="galleryitem">
+            <img class="galleryimg" src="images/woodenpier.jpg">
+                <div class="galleryinfo">
+                    <h3 class="gallerytitle">wooden beach</h3>
+                    <p class="gallerydesc">wooden beach</p>
+                    <a href="https://unsplash.com/photos/gray-wooden-beach-dock-viewing-sea-px-tX8dnE-A" class="gallerylink">Learn More</a>
+                </div>
+            </div>
+
+        <!-- Image 6 -->
+        <div class="galleryitem">
+            <img class="galleryimg" src="images/canyon.jpg">
+                <div class="galleryinfo">
+                    <h3 class="gallerytitle">canyon</h3>
+                    <p class="gallerydesc">With golden glowing red walls, twisted rock faces & beams of light shining through the dusty air is one of the natures wonder.</p>
+                    <a href="https://unsplash.com/photos/antelope-canyon-EVZxXuOEk3w" class="gallerylink" >Learn More</a>
+                </div>
+            </div>
+
+    </div>
+    <button class="btnright">&#x276F</button>
+    <button class="btnleft">&#x276E</button>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="lab10_chen.js"></script>
+</body>
+</html>
