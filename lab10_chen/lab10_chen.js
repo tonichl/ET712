@@ -135,7 +135,13 @@ Myform.addEventListener("submit", function(event){
         return;
     }
 
-    alert("Form submitted successfully!");
+    alert("Form submitted successfully!")
+
+
+    Name.value = ""
+    Email.value = ""
+    Password.value = ""
+
 })
     
 
