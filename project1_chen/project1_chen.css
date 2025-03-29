@@ -1,0 +1,297 @@
+*{box-sizing: border-box;}
+
+body{
+    background-color:darkseagreen;
+}
+
+
+
+/*--------------------------------title and subtitle--------------------------*/
+.title, .transportationtitle, .shapestitle, .animalstitle, .clothingtitle{
+   /*border:red solid;*/
+    text-align:center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:darkseagreen;
+    border-radius: 5px;
+    padding:10px;
+    width:100%;
+    background-color:darkkhaki;
+   
+}
+
+.transportationtitle, .shapestitle, .animalstitle, .clothingtitle{
+    cursor:pointer;
+    transition: transform 0.2s ease;
+}
+
+.transportationtitle:hover, 
+.shapestitle:hover, 
+.animalstitle:hover,
+.clothingtitle:hover{
+    transform: scale(1.01);
+
+}
+
+.subtitle{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center;
+    width: 100%; 
+    margin: 0; 
+    padding: 5px; 
+    margin-bottom: 0px; /* Add space between subtitle and image */
+}
+
+
+
+/*-----------------------------buttons------------------------------------------*/
+.buttoncontainer{
+    /*border:red solid;*/
+    text-align:center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:darkseagreen;
+    border-radius: 5px;
+    padding:10px;
+    width:auto;
+    
+
+}
+
+.btntransportation, .btnshapes, .btnanimals, .btnclothing, .btnshowhidesubtitle{
+    padding:10px;
+    background-color:darkkhaki;
+    border-radius: 5px;
+    display:inline-block;
+    margin:2em;
+    cursor:pointer;
+    
+}
+
+.btntransportation:hover, 
+.btnshapes:hover, 
+.btnanimals:hover, 
+.btnclothing:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+
+/*-------------------------each container and img------------------------------*/
+.transportationcontainer, .shapescontainer, .animalscontainer, .clothingcontainer{
+    /*border:solid red;*/
+    background-color:darkseagreen;
+    border-radius:5px;
+    padding:10px;
+    align-items: center;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: auto; /* Adds spacing between items */
+    /*flex-direction: column;*/
+
+}
+
+/*.animals > .subtitle{
+    display:none;
+
+}*/
+
+.galleryimg{
+    width:200px;
+    max-width: 200px;
+    height:250px;
+    transform: translateX(-3%);
+    transition: transform 0.5s ease;
+    object-fit: contain; /* Ensures image maintains aspect ratio */
+    margin: 0 auto; /* Centers the image horizontally */
+    display: block; /* Needed for margin auto to work */
+    margin-bottom: 15px;
+}
+
+.galleryimg:hover {
+    transform: scale(1.05);
+}
+
+/*square for each image*/
+/*.transportation, .shapes, .animals, .clothing{
+    border:red solid;
+    box-shadow: 0 0 10px 0 rgb(88, 118, 88) ; 
+    display:flex;
+    flex-wrap: wrap;
+    margin:0;
+    align-items: center;
+    background-color:lightblue;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto; 
+}*/
+
+
+
+/*---------------------------------top button----------------------------*/
+html{scroll-behavior: smooth;}
+
+.topcontainer{
+    width: 50px;
+    height: 50px;
+    background-color:rgb(88, 118, 88);
+    position: fixed;
+    bottom: 1.5em;
+    right: 1.5em;
+    border-radius: 20%;
+    text-align: center;
+    display:none;
+}
+
+.toplink{
+    color:white;
+    padding-top: 1em;
+    display: block;
+    text-decoration:none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.toplink:hover{
+    color:darkkhaki;
+ 
+}
+
+
+
+/*-------------------------Modal window and styles-----------------------------*/
+.transportationmodal, .shapesmodal, .animalsmodal, .clothingmodal{
+    background-color:rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display:none;
+}
+
+.modalcontent{
+    width: 60%;
+    height: 60%;
+    padding:1em;
+    margin: 2% auto;
+    background-color:darkkhaki;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center;
+    border-radius: 5px;
+    
+}
+
+.closemodal{
+    display: block;
+    padding: 0.5em;
+    margin-left: auto;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.closemodal:hover{
+    color:crimson;
+}
+
+
+
+/*--------------------------------animal validation---------------------------*/
+.animalvalidation{
+    /*border: solid red;*/
+    padding:5px;
+    margin-bottom:20px;
+    display:block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+
+/*-------------------------------slice images-------------------------------*/
+img{width: 600px; display: block; height:350px}
+
+.maincontainer, .gallerycontainer{
+    width:600px;
+    height:350px;
+    margin: auto;
+    /*border:red solid;*/
+}
+
+.maincontainer{
+    margin-top:.5em;
+    margin-bottom: 10em;
+    position: relative;
+    z-index: 0;
+}
+
+.gallerycontainer{
+    position: relative;
+    z-index: 1;
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+
+.galleryimgstore{
+    display: inline-block;
+    width: 600px;
+}
+
+.btnright, .btnleft{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    font-size: 1.5em;
+    padding:0.5em;
+    border: none;
+    background-color:rgba(100, 100, 100, 0.6)
+}
+
+.btnright{
+    right: 0%;
+}
+
+.btnleft{
+    left: 0%;
+}
+
+.btnright:hover, .btnleft:hover{
+    background-color:rgba(200, 200, 200, 0.9);
+    color:brown;
+}
+
+/*-----------------------Container for each store item (image + link)---------------*/
+.store-item {
+    position: relative;
+    display: inline-block;
+    width: 600px;
+    height: 350px;
+  }
+  
+  /* Store link styling */
+  .store-link {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', sans-serif;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+  }
+  
+  /* Show link on hover */
+  .store-item:hover .store-link {
+    opacity: 3;
+    text-decoration: underline;
+    color:darkkhaki;
+  }
+  
+
+
+
