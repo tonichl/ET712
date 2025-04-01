@@ -1,3 +1,6 @@
+
+//------------------------ button -------------------------
+
 //get the element of each button and add function to each button
 
 const btntransportation = document.querySelector(".btntransportation")
@@ -46,7 +49,7 @@ btnshowhidesubtitle.addEventListener("click", function() {
 
 })*/
 
-
+//--------------------------------each title modal windows -------------------------
 // Get the title elements that will open the modals
 const transportationtitle = document.querySelector('.transportationtitle');
 const shapestitle = document.querySelector('.shapestitle');
@@ -111,7 +114,7 @@ if (clothingClose) {
 
 
 
-
+//--------------------------------animals section checkbtn, resetbtn, input -----------------
 
 const checkbtn =document.querySelector(".checkbtn")
 let correctcount = 0;
@@ -240,7 +243,7 @@ resetBtn.addEventListener("click", function() {
 
 
 
-
+//---------------------------slide information ----------------------
 //collect the element
 let btnright = document.querySelector(".btnright")
 let btnleft = document.querySelector(".btnleft")
