@@ -6,8 +6,6 @@ import "./index.css"
 const User = function(props){
     return(
         <>
-
-            
             <section className="card">
                 <img src={props.image}/>
                 <div className="content">
@@ -20,8 +18,6 @@ const User = function(props){
                 <div className="comment">
                     {props.usercomment}
                 </div>
-
-
             </section>
 
         </>

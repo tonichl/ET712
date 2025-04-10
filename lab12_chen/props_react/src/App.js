@@ -1,7 +1,11 @@
-
+//import files
 import './App.css';
 import User from"./comments"
 import "./index.css"
+import User_feedback from "./feedback"
+import modalwindow from "./modalwindow"
+
+
 //import images
 import cat from "./images/cat.png"
 import chicken from "./images/chicken.png"
@@ -12,10 +16,15 @@ function App() {
    <>
    <h1>User comments</h1>
    <main className="maincontainer">
-    <User image={cat} username="Mr. cat" date="04/08/25" usercomment="great job"/>
-    <User image={chicken} username="Mr. chicken" date="04/08/25" usercomment="glad to help"/>
-    <User image={panda} username="Mr. panda" date="04/08/25" usercomment="relax"/>
+    < User_feedback><User image={cat} username="Mr. cat" date="04/08/25" usercomment="great job"/></User_feedback>
+    < User_feedback><User image={chicken} username="Mr. chicken" date="04/08/25" usercomment="glad to help"/></User_feedback>
+    < User_feedback><User image={panda} username="Mr. panda" date="04/08/25" usercomment="relax"/></User_feedback>
    </main>
+
+
+
+
+
 
    </>
   );
