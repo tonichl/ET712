@@ -8,6 +8,16 @@ const modalwindow = function(props){
         modalwindow.style.display ="none"
         }
 
+    const comments = function(){
+        let commentarea = document.querySelector(".commentarea")
+        const commentlist = document.querySelector(".commentlist")
+        commentlist.innerHTML += <li>${props.usercomment} - ${commentarea.value}</li>
+        const modalwindow = document.querySelector(".modalwindow")
+        modalwindow.style.display = "none";
+        commentarea.value = ""
+        
+    }
+
     return(
         <>
             {/*modal window*/}
