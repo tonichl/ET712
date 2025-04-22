@@ -12,7 +12,7 @@ import './App.css';
 function App() {
   return (
     <>
-  <h1>react routing</h1>
+  <h1 className="title">react routing</h1>
   <BrowserRouter>
   <Navbars/>
   <Routes>

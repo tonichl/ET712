@@ -3,7 +3,7 @@
 .title {
   color:darkseagreen;
   text-align: center;
-  padding: 2x;
+  padding: 2px;
 }
 
 .navheader{
@@ -31,7 +31,7 @@
   background-color:darkcyan;
 }
 
-.tablink:hover, .iconlink:hover{
+.tablink:hover a, .iconlink:hover a{
   color:darkseagreen
 }
 
