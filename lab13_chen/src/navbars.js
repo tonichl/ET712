@@ -7,7 +7,8 @@ const Navbars = function(){
         <>
             <nav className ="navheader">
                 <section className="iconlink">
-                    <a href ="https://www.qcc.cuny.edu/" target="_blank"> QCC </a>
+                    <a href ="https://www.qcc.cuny.edu/" target="_blank" rel="noopener
+noreferrer"> QCC </a>
                 </section>
                 <section className = "navlinks">
                     <button className = "tablink"><Link to="/">Home</Link></button>
