@@ -6,7 +6,7 @@ import Home from "./home";
 import About from "./about";
 import Contact from "./contact";
 import Navbars from "./navbars";
-import './App.css'
+import './App.css';
 
 
 function App() {
