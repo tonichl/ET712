@@ -1,0 +1,37 @@
+/*navbars.js*/
+
+.title{
+  color:darkseagreen;
+  text-align: center;
+  padding: 2x;
+}
+
+.navheader{
+  background-color:darkcyan;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.iconlink{
+  width:30%;
+  padding: 2%;
+}
+
+.navlinks{
+  width: 70%;
+  padding: 2%;
+  display: flex;
+  justify-content: end;
+}
+
+.tablink{
+  width: 30%;
+  border: none;
+  background-color:darkcyan;
+}
+
+.tablink:hover, .iconlink:hover{
+  color:darkseagreen
+}
+
