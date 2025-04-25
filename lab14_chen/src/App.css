@@ -1,0 +1,23 @@
+.inputs{
+    padding:10px;
+    text-align: center
+}
+
+.form{
+    background-color:rgb(238, 202, 155);
+    border-radius:5px;
+    border-color:darkolivegreen;
+}
+
+.legend{
+    padding:10px;
+    font-size:30px;
+    font-weight:bold;
+    
+}
+
+.whole{
+    background-color:cadetblue;
+    padding:20px;
+    font-size: 20px;;
+}

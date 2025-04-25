@@ -14,7 +14,7 @@ function App() {
 
   //function to open an alert dialog when the form is submitted
   const submitform = function(event){
-    event.preventDefalut()
+    event.preventDefault()
     alert(`welcome to react state ${inputs.username}. your lucky number is ${inputs.luckynumber} \nComments = ${textcomment}`)
   }
 
@@ -39,7 +39,7 @@ function App() {
     selectedGender(event.target.value)
   }
   return (
-   <>
+   <section className='whole'>
     <h1> lab 14, react state</h1>
     <p>count = {count}</p>
     <button onClick={() => setCount(count+1)}>increment the count</button>
@@ -48,10 +48,10 @@ function App() {
 
 
     <h1> form application using state</h1>
-    <form>
-      <fieldset>
-        <legend>Forms in ReactJS</legend>
-        <section>
+    <form onSubmit={submitform}>
+      <fieldset className='form'>
+        <legend className='legend'>Forms in ReactJS</legend>
+        <section className='inputs'>
         <label for="name">Enter your name:</label>
         <input
         type='text'
@@ -63,7 +63,7 @@ function App() {
         </section>
 
 
-        <section>
+        <section className='inputs'>
           <label for ="luckynumber"> enter a luckynumber</label>
           <input
             type = 'number'
@@ -75,7 +75,7 @@ function App() {
         </section>
 
 
-        <section>
+        <section className='inputs'>
           <label for="comments">any question?</label>
           <textarea
             id='comments'
@@ -84,7 +84,7 @@ function App() {
             />
         </section>
 
-        <section>
+        <section className='inputs'>
         <select value = {mygender} onChange = {collectedgender}>
           <option value="male">Male</option>
           <option value="female">Female</option>
@@ -93,7 +93,11 @@ function App() {
         </section>
         
         {/*submit form*/}
-        <input type='submit'/>
+        
+          <section>
+            <input type='submit'/>
+        </section>
+       
 
       </fieldset>
 
@@ -104,7 +108,7 @@ function App() {
       <p> gender = {mygender}</p>
     </form>
 
-   </>
+   </section>
   );
 }
 
