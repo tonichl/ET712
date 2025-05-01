@@ -1,0 +1,100 @@
+.body{
+  margin: 0%;
+  padding: 0%;
+  box-sizing:0%;
+}
+
+.title{
+  text-align: center;
+  color:peru;
+  padding: 1em;
+}
+
+/* slice app */
+.slicewrapper{
+  width: 80%;
+  margin: 2rem auto;
+  box-shadow: 1px 1px 5px lightgray;
+}
+
+.numberWrapper{
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 2em auto;
+  background-color: darkkhaki;
+  color: white;
+}
+
+.numberWrapper>div{
+  border: solid gray 1px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10%;
+  text-align:center;
+}
+
+.msg{
+  text-align:center;
+  font-weight: bolder;
+
+}
+
+.btngroup{
+  display:flex;
+  justify-content: space-evenly;
+
+}
+
+.btngroup > button{
+  width: 30%;
+  background-color: mediumslateblue;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.btngroup > button:hover{
+  background-color: darkcyan;
+  box-shadow: 1px 1px 5px gray;
+  font-weight: bolder;
+}
+
+.active{
+  background-color:burlywood;
+  box-shadow: 0px 0px 5px 1px gray;
+}
+
+
+/*open and close button*/
+.info{
+  width: 900px;
+  padding: 1rem;
+  margin: auto;
+}
+
+.readmore_btn{
+  margin-left: 1rem;
+  background-color:mediumslateblue;
+  padding:0.2rem 0.5rem;
+  border:none;
+  color: white;
+  border-radius: 5px;
+}
+
+
+.hiddentext p{
+  width: 900px;
+  padding: 2rem;
+  background-color: aliceblue;
+  margin:auto;
+}
+
+.readmore_btn:hover{
+  background-color: darkcyan;
+  box-shadow: 1px 1px 5px gray;
+  font-weight: bolder;
+
+}
