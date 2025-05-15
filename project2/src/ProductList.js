@@ -13,22 +13,7 @@ function ProductList({ products, addToCart }) {
             img = {product.images}
             onAddToCart={function() {addToCart(product)}} 
         />
-))}
-        {/*<Product 
-        key={products[0].id} 
-        product={products[0]} 
-        onAddToCart={() => addToCart(products[0])} 
-        />
-        <Product 
-        key={products[1].id} 
-        product={products[1]} 
-        onAddToCart={() => addToCart(products[1])} 
-        />
-        <Product 
-        key={products[2].id} 
-        product={products[2]} 
-        onAddToCart={() => addToCart(products[2])} 
-        />*/}
+      ))}
       
     </div>
   );

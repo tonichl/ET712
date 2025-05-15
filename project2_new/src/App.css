@@ -1,0 +1,126 @@
+
+
+.header{
+    background-color:rgba(252, 125, 78, 0.76);
+    text-align: center;
+}
+
+/* Navbar container */
+.navheader {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 1rem;
+  background: #f8f8f8; 
+}
+
+/* Left-aligned links (Home, Products, About) */
+.navlinks {
+    display: flex;
+    gap: 1rem; /* Space between buttons */
+     width: 100%;
+}
+
+/* Cart button - pushes to far right */
+.tablinkcart {
+    margin-left: auto; 
+}
+
+/* Button styling (optional) */
+.tablink, .tablinkcart {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: transform 0.2s;
+  
+}
+
+.tablink a, .tablinkcart a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tablink:hover, .tablinkcart:hover{
+  color:burlywood;
+   transform: scale(1.5);
+}
+
+/* Modal Styles */
+.modalwindow{
+  background-color:rgba(50, 50, 50, 0.6);
+  position: fixed;
+  inset: 0% 0% 0% 0%;
+  display:none;
+
+}
+
+.modalcontent{
+  background-color: white;
+  height:300px;
+  width:500px;
+  margin: 5em auto;
+  padding:10px;
+}
+
+.closemodal {
+  cursor: pointer;
+  float: right;
+  transition: transform 0.2s;
+}
+
+.closemodal:hover{
+  color:burlywood;
+  transform: scale(1.5);
+}
+
+.modalbody{
+  margin:10px;
+}
+
+/* Product Image Styles */
+.product-image {
+  cursor: pointer;
+  transition: transform 0.2s;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-image:hover {
+  transform: scale(1.03);
+}
+
+/* Existing product grid styles */
+/*.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}*/
+
+.item-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.item-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #45a049;
+}

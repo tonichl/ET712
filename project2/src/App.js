@@ -4,7 +4,8 @@ import Navbar from './Navbar';
 import ProductList from './ProductList';
 import Cart from './Cart';
 import './App.css';
-import './Card'
+import './Card';
+import './Footer';
 
 //import image
 import Aspire from './product_img/Aspire-Healthy-Energy.png';
@@ -80,6 +81,7 @@ const addToCart = (product) => {
   });
 };
 
+//count the cart 
   let totalQuantity = 0;
   cart.forEach(item => {
     totalQuantity += item.quantity;
@@ -101,6 +103,7 @@ const addToCart = (product) => {
         </Routes>
     </BrowserRouter>
     </div>
+    
   );
 }
 
