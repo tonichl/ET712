@@ -5,19 +5,22 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 // Component imports
 import Home from "./Home";
 import About from "./About";
-import Products from "./Products";  
+import Products from "./Card";  
 import Navbar from "./Navbar";
 import Footer from './Footer';
 import Header from './Header';
 import Cart from './Cart';
 import Modalwindow from './Modalwindow'; 
+import Contact from './Contact'
+
 
 
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
+  const [selectedItem, setSelectedItem] = useState(null);
 
-  const [showModal, setShowModal] = useState(false);
+  /*const [showModal, setShowModal] = useState(false);*/
 
   const addToCart = (item) => {
     setCartItems([...cartItems, item]);
@@ -36,13 +39,19 @@ const removeFromCart = (index) => {
       <Routes>
         <Route path='/' element={<Home />} />  
         <Route 
-          path='/products' element={<Products addToCart={addToCart} showModal={() => setShowModal(true)}/>} 
+          path='/products' element={<Products addToCart={addToCart} setSelectedItem={setSelectedItem}/>} 
         />
+        <Route path='/contact' element={<Contact />} />
         <Route path='/about' element={<About />} />
         <Route path='/cart' element={<Cart cartItems={cartItems} removeFromCart={removeFromCart}  />} />
       </Routes>
 
-      {showModal && <Modalwindow onClose={() => setShowModal(false)} />}
+      {selectedItem && (
+        <Modalwindow 
+          item={selectedItem} 
+          onClose={() => setSelectedItem(null)} 
+        />
+      )}
       <Footer />
     </BrowserRouter>
   );

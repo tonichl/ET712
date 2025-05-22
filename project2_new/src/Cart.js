@@ -21,6 +21,11 @@ function Cart({ cartItems, removeFromCart }) {
         <>
           {cartItems.map((item, index) => (
             <div key={index} className="cart-item">
+               <img 
+                  src={item.image} 
+                  alt={item.name}
+                  className="cart-item-image"
+                />
               <h3>{item.name}</h3>
               <p>${item.price.toFixed(2)}</p>
               <button onClick={() => removeFromCart(index)}>

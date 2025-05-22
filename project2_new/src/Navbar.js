@@ -1,20 +1,41 @@
-import React from "react";
-import {Link} from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import './App.css';
 
-const Navbars = function({ cartCount }){
-    return(
-        <>
-            <nav className ="navheader">
-                <section className = "navlinks">
-                    <button className = "tablink"><Link to="/">Home</Link></button>
-                    <button className = "tablink"><Link to="/Products">Products</Link></button>
-                    <button className = "tablink"><Link to="/about">About Us</Link></button>
-                    <button className = "tablinkcart"><Link to="/cart">🛒 Cart ({cartCount || 0})</Link></button>
-                </section>
-            </nav>
-        </>
-    )
-}
+const Navbars = ({ cartCount }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-export default Navbars
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <nav className="navheader">
+      {/* Mobile Hamburger Button */}
+      <button className="hamburger-btn" onClick={toggleMenu}>
+        {isMenuOpen ? '✕' : '☰'}
+      </button>
+
+      {/* Navigation Links - mobile toggle class */}
+      <section className={`navlinks ${isMenuOpen ? 'active' : ''}`}>
+        <button className="tablink">
+          <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
+        </button>
+        <button className="tablink">
+          <Link to="/products" onClick={() => setIsMenuOpen(false)}>Products</Link>
+        </button>
+        <button className="tablink">
+          <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
+        </button>
+        <button className="tablink">
+          <Link to="/about" onClick={() => setIsMenuOpen(false)}>About Us</Link>
+        </button>
+        <button className="tablinkcart">
+          <Link to="/cart" onClick={() => setIsMenuOpen(false)}>🛒 Cart ({cartCount || 0})</Link>
+        </button>
+      </section>
+    </nav>
+  );
+};
+
+export default Navbars;
