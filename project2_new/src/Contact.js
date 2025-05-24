@@ -6,7 +6,7 @@ const Contact = function(){
         <>
         <div className="page">
         <header><h1 className="title">Contact Us</h1></header>
-        <p>Email: contact@energydrinkstore.com</p>
+        <p>Email: contact@Beveragestore.com</p>
         <p>Phone: (123) 456-7890</p>
         </div>
         

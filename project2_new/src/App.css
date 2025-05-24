@@ -313,3 +313,23 @@
   border-radius: 4px;
   border: 1px solid #ddd;
 }
+
+.totals{
+  text-align:center;
+  font-size: 18px;
+  
+}
+
+.remove{
+  background-color:rgb(186, 162, 129);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.remove:hover{
+  color:crimson;
+}

@@ -28,7 +28,7 @@ function Cart({ cartItems, removeFromCart }) {
                 />
               <h3>{item.name}</h3>
               <p>${item.price.toFixed(2)}</p>
-              <button onClick={() => removeFromCart(index)}>
+              <button className="remove" onClick={() => removeFromCart(index)}>
                 Remove
               </button>
             </div>
@@ -36,7 +36,7 @@ function Cart({ cartItems, removeFromCart }) {
           
           <div className="totals">
             <p>Subtotal: ${subtotal.toFixed(2)}</p>
-            <p>Tax: ${tax.toFixed(2)}</p>
+            <p>NY Tax: ${tax.toFixed(2)}</p>
             <p>Total: ${total.toFixed(2)}</p>
           </div>
         </>
